@@ -1,129 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
       <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-      <script>
-            function getRandomIntInclusive(min, max) {
-                  min = Math.ceil(min);
-                  max = Math.floor(max);
-                  return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
+      <ul>
+            <li class="btn" id="btn-1">Rock</li>
+            <li class="btn" id="btn-2">Paper</li>
+            <li class="btn" id="btn-3"> Scissors</li>
+      </ul>
+      <div class="displayGame">
+            <p class="displayRound"></p>
+            <div class="displaySelection"></div>
+            <p class="displayScore"></p>
+      </div>
+      <div class="displayFinalResult"></div>
 
-            function computerPlay() {
-                  let choix = getRandomIntInclusive(0, 2);
-                  switch (choix) {
-                        case 0:
-                              return "rock";
-                              break;
-                        case 1:
-                              return "paper";
-                              break;
-                        case 2:
-                              return "scissors";
-                              break;
-
-                        default:
-                              console.error("There is an error!");
-                              break;
-                  }
-            }
-
-
-
-            function playerPlay() {
-                  const askPlayer = prompt("what do you choose : Rock, Paper or Scissors ?");
-                  const lowerSelection = askPlayer.toLowerCase();
-
-                  return lowerSelection;
-            }
-
-
-
-
-            function showSelection(playerSelection, computerSelection) {
-
-                  console.log("Player choose: " + playerSelection);
-                  console.log("Computer choose: " + computerSelection);
-            }
-
-            function oneRoundPlay(playerSelection, computerSelection) {
-                  if (playerSelection === "paper") {
-                        switch (computerSelection) {
-                              case "rock":
-                                    playerScore++;
-                                    return "You win! Paper beats Rock ";
-                                    break;
-                              case "scissors":
-                                    computerScore++;
-                                    return "You lose! Scissors beats Paper";
-                                    break;
-                              case "paper":
-                                    return "it's tied! you are equal";
-                                    break;
-                        }
-                  } else if (playerSelection === "rock") {
-                        switch (computerSelection) {
-                              case "paper":
-                                    computerScore++;
-                                    return "You lose! Paper beats Rock ";
-                                    break;
-                              case "scissors":
-                                    playerScore++;
-                                    return "You win! Rock beats Scissors";
-                                    break;
-                              case "rock":
-                                    return "it's tied! you are equal";
-                                    break;
-                        }
-                  } else if (playerSelection === "scissors") {
-                        switch (computerSelection) {
-                              case "paper":
-                                    playerScore++;
-                                    return "You win! Scissors beats Paper ";
-                                    break;
-                              case "rock":
-                                    computerScore++;
-                                    return "You lose! Rock beats Scissors";
-                                    break;
-                              case "scissors":
-                                    return "it's tied!";
-                                    break;
-                        }
-                  } else return console.error("There is an error!");
-
-
-            }
-
-            let playerScore = 0;
-            let computerScore = 0;
-
-            function game() {
-                  let round = 1
-                  while (round <= 5) {
-
-                        let computerSelection = computerPlay();
-                        let playerSelection = playerPlay();
-
-                        showSelection(playerSelection, computerSelection);
-                        console.log(oneRoundPlay(playerSelection, computerSelection));
-                        console.log("score :  Player = " + playerScore + " Computer = " + computerScore);
-                        round++;
-                  }
-                  if (playerScore > computerScore) {
-                        console.log("You are the winner!!");
-                  } else if (playerScore < computerScore) {
-                        console.log("You lost !!");
-                  } else console.log("You are equal !!")
-            }
-            game();
-      </script>
+      <script src="script.js"></script>
 </body>
 
 </html>

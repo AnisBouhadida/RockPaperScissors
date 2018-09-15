@@ -1,0 +1,152 @@
+/* 
+      Project : Rock, Paper, Scissors app.
+      Developper : BOUHADIDA ANIS 
+      File : style.css
+      Last update : 15/09/2018 
+
+
+      Summary:
+      ========
+      1/ .
+      2/ .
+      3/ .
+      4/ .
+      5/ .
+      6/ .
+      7/ .
+      ========
+*/
+
+body {
+   background-image: url("close-up-close-up-fingers-1249214.jpg");
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul {
+   list-style-type: none;
+   width: 75%;
+   margin: auto;
+   padding: 0;
+   text-align: center;
+}
+
+.btn {
+   display: inline-block;
+   background-image: linear-gradient(to top, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
+   width: 20%;
+   margin: 1em 0.5em 0 0;
+   border-radius: 50px;
+   padding: 20px 0;
+   font-weight: bold;
+   text-align: center;
+   color: azure;
+   font-size: 2em;
+}
+
+.btn:hover {
+   background-image: linear-gradient(to bottom, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
+}
+
+.displayGame {
+   width: 30%;
+   margin: 80px auto;
+   border-radius: 20px;
+   box-shadow: 2px 2px 2px #6d60c4,
+      -2px -2px 2px #6d60c4,
+      -1px -1px 2px #1545b6,
+      1px 1px 2px #1545b6,
+      3px 3px 2px #a080d3,
+      -3px -3px 2px #a080d3,
+      -4px -4px 2px #caa3e3,
+      4px 4px 2px #caa3e3;
+   background-color: rgba(240, 233, 233, 0.746);
+   text-align: center;
+   line-height: 3em;
+}
+
+#pa-btn {
+
+   position: fixed;
+   bottom: 30px;
+   left: 20px;
+}
+
+#pa-txt {
+   margin: 0;
+}
+
+.displayFinalResult {
+   position: fixed;
+   bottom: 30px;
+   left: 35%;
+   width: 30%;
+   border-radius: 20px;
+   box-shadow: 2px 2px 2px #6d60c4,
+      -2px -2px 2px #6d60c4,
+      -1px -1px 2px #1545b6,
+      1px 1px 2px #1545b6,
+      3px 3px 2px #a080d3,
+      -3px -3px 2px #a080d3,
+      -4px -4px 2px #caa3e3,
+      4px 4px 2px #caa3e3;
+   background-color: rgba(240, 233, 233, 0.746);
+   text-align: center;
+}
+
+.displayFinalResult>p {
+   font-size: 2em;
+   font-weight: bold;
+   margin: 0;
+   padding: 1em;
+}
+
+
+@media screen and (min-width : 942px) and (max-width : 1024px) {
+   body {
+      background-size: 220%;
+   }
+}
+
+@media screen and (min-width : 625px) and (max-width : 941px) {
+   body {
+      background-size: 210%;
+   }
+
+   .btn {
+      display: list-item;
+      min-width: 155px;
+      margin: 0.5em auto;
+      padding: 20px;
+   }
+}
+
+@media screen and (min-width : 385px) and (max-width : 624px) {
+   body {
+      background-size: 330%;
+   }
+
+   .btn {
+      display: list-item;
+      min-width: 155px;
+      margin: 0.2em auto;
+      padding: 10px;
+   }
+}
+
+@media screen and (max-width : 384px) {
+   body {
+      background-size: 330%;
+   }
+
+   .btn {
+      display: list-item;
+      min-width: 155px;
+      margin: 0.2em auto;
+      padding: 10px;
+   }
+}
