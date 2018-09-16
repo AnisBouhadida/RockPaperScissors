@@ -2,7 +2,7 @@
       Project : Rock, Paper, Scissors app.
       Developper : BOUHADIDA ANIS 
       File : style.css
-      Last update : 15/09/2018 
+      Last update : 16/09/2018 
 
 
       Summary:
@@ -18,11 +18,11 @@
 */
 
 body {
-      background-image: url("close-up-close-up-fingers-1249214.jpg");
+      background-image: url("bkgImage-min.jpg");
       background-attachment: fixed;
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
       margin: 0;
       font-family: 'Roboto', sans-serif;
 }
@@ -108,10 +108,6 @@ ul {
 
 
 @media screen and (min-width : 942px) and (max-width : 1024px) {
-      body {
-            background-size: 210%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
@@ -141,10 +137,6 @@ ul {
 }
 
 @media screen and (min-width : 625px) and (max-width : 941px) {
-      body {
-            background-size: 210%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
@@ -174,10 +166,6 @@ ul {
 }
 
 @media screen and (min-width : 385px) and (max-width : 624px) {
-      body {
-            background-size: 330%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
@@ -208,10 +196,6 @@ ul {
 }
 
 @media screen and (max-width : 384px) and (min-height : 800px) {
-      body {
-            background-size: 330%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
@@ -241,10 +225,6 @@ ul {
 }
 
 @media screen and (max-width : 384px) and (max-height : 800px) {
-      body {
-            background-size: 330%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
@@ -274,10 +254,6 @@ ul {
 }
 
 @media screen and (max-width : 384px) and (max-height : 639px) {
-      body {
-            background-size: 330%;
-      }
-
       .btn {
             display: list-item;
             min-width: 155px;
