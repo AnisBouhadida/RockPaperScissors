@@ -18,135 +18,292 @@
 */
 
 body {
-   background-image: url("close-up-close-up-fingers-1249214.jpg");
-   background-attachment: fixed;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   margin: 0;
-   font-family: 'Roboto', sans-serif;
+      background-image: url("close-up-close-up-fingers-1249214.jpg");
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
 }
 
 ul {
-   list-style-type: none;
-   width: 75%;
-   margin: auto;
-   padding: 0;
-   text-align: center;
+      list-style-type: none;
+      width: 75%;
+      margin: auto;
+      padding: 0;
+      text-align: center;
 }
 
 .btn {
-   display: inline-block;
-   background-image: linear-gradient(to top, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
-   width: 20%;
-   margin: 1em 0.5em 0 0;
-   border-radius: 50px;
-   padding: 20px 0;
-   font-weight: bold;
-   text-align: center;
-   color: azure;
-   font-size: 2em;
+      display: inline-block;
+      background-image: linear-gradient(to top, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
+      width: 20%;
+      margin: 1em 0.5em 0 0;
+      border-radius: 50px;
+      padding: 20px 0;
+      font-weight: bold;
+      text-align: center;
+      color: azure;
+      font-size: 2em;
 }
 
 .btn:hover {
-   background-image: linear-gradient(to bottom, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
+      background-image: linear-gradient(to bottom, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
 }
 
 .displayGame {
-   width: 30%;
-   margin: 80px auto;
-   border-radius: 20px;
-   box-shadow: 2px 2px 2px #6d60c4,
-      -2px -2px 2px #6d60c4,
-      -1px -1px 2px #1545b6,
-      1px 1px 2px #1545b6,
-      3px 3px 2px #a080d3,
-      -3px -3px 2px #a080d3,
-      -4px -4px 2px #caa3e3,
-      4px 4px 2px #caa3e3;
-   background-color: rgba(240, 233, 233, 0.746);
-   text-align: center;
-   line-height: 3em;
+      width: 30%;
+      margin: 80px auto;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px #6d60c4,
+            -2px -2px 2px #6d60c4,
+            -1px -1px 2px #1545b6,
+            1px 1px 2px #1545b6,
+            3px 3px 2px #a080d3,
+            -3px -3px 2px #a080d3,
+            -4px -4px 2px #caa3e3,
+            4px 4px 2px #caa3e3;
+      background-color: rgba(240, 233, 233, 0.746);
+      text-align: center;
+      line-height: 3em;
 }
 
 #pa-btn {
 
-   position: fixed;
-   bottom: 30px;
-   left: 20px;
+      position: fixed;
+      bottom: 30px;
+      left: 20px;
 }
 
 #pa-txt {
-   margin: 0;
+      margin: 0;
 }
 
 .displayFinalResult {
-   position: fixed;
-   bottom: 30px;
-   left: 35%;
-   width: 30%;
-   border-radius: 20px;
-   box-shadow: 2px 2px 2px #6d60c4,
-      -2px -2px 2px #6d60c4,
-      -1px -1px 2px #1545b6,
-      1px 1px 2px #1545b6,
-      3px 3px 2px #a080d3,
-      -3px -3px 2px #a080d3,
-      -4px -4px 2px #caa3e3,
-      4px 4px 2px #caa3e3;
-   background-color: rgba(240, 233, 233, 0.746);
-   text-align: center;
+      position: fixed;
+      bottom: 30px;
+      left: 35%;
+      width: 30%;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px #6d60c4,
+            -2px -2px 2px #6d60c4,
+            -1px -1px 2px #1545b6,
+            1px 1px 2px #1545b6,
+            3px 3px 2px #a080d3,
+            -3px -3px 2px #a080d3,
+            -4px -4px 2px #caa3e3,
+            4px 4px 2px #caa3e3;
+      background-color: rgba(240, 233, 233, 0.746);
+      text-align: center;
 }
 
 .displayFinalResult>p {
-   font-size: 2em;
-   font-weight: bold;
-   margin: 0;
-   padding: 1em;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0;
+      padding: 1em;
 }
+
 
 
 @media screen and (min-width : 942px) and (max-width : 1024px) {
-   body {
-      background-size: 220%;
-   }
+      body {
+            background-size: 210%;
+      }
+
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 1em auto;
+            padding: 40px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 80px auto;
+      }
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 80px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 2em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
 }
 
 @media screen and (min-width : 625px) and (max-width : 941px) {
-   body {
-      background-size: 210%;
-   }
+      body {
+            background-size: 210%;
+      }
 
-   .btn {
-      display: list-item;
-      min-width: 155px;
-      margin: 0.5em auto;
-      padding: 20px;
-   }
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 0.5em auto;
+            padding: 20px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 80px auto;
+      }
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 80px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 2em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
 }
 
 @media screen and (min-width : 385px) and (max-width : 624px) {
-   body {
-      background-size: 330%;
-   }
+      body {
+            background-size: 330%;
+      }
 
-   .btn {
-      display: list-item;
-      min-width: 155px;
-      margin: 0.2em auto;
-      padding: 10px;
-   }
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 0.2em auto;
+            padding: 10px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 40px auto;
+      }
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 40px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 0.8em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
+
 }
 
-@media screen and (max-width : 384px) {
-   body {
-      background-size: 330%;
-   }
+@media screen and (max-width : 384px) and (min-height : 800px) {
+      body {
+            background-size: 330%;
+      }
 
-   .btn {
-      display: list-item;
-      min-width: 155px;
-      margin: 0.2em auto;
-      padding: 10px;
-   }
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 0.2em auto;
+            padding: 20px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 40px auto;
+      }
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 40px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 0.8em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
+}
+
+@media screen and (max-width : 384px) and (max-height : 800px) {
+      body {
+            background-size: 330%;
+      }
+
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 0.2em auto;
+            padding: 10px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 20px auto;
+      }
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 20px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 0.5em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
+}
+
+@media screen and (max-width : 384px) and (max-height : 639px) {
+      body {
+            background-size: 330%;
+      }
+
+      .btn {
+            display: list-item;
+            min-width: 155px;
+            margin: 0.2em auto;
+            padding: 10px;
+      }
+
+      .displayGame {
+            width: 90%;
+            margin: 20px auto;
+            line-height: 1.5em;
+      }
+
+
+      .displayFinalResult {
+            width: 90%;
+            position: unset;
+            margin: 20px auto;
+      }
+
+      .displayFinalResult>p {
+            padding: 0.2em;
+      }
+
+      #pa-btn {
+            position: unset;
+            margin: auto;
+      }
 }
