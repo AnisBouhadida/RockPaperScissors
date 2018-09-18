@@ -14,6 +14,7 @@
       5/ One-round play.
       6/ Display the player-computer's selection and the game final result.
       7/ Game function (5-round play).
+      8/ Display infos.
       ========
 */
 
@@ -231,6 +232,16 @@ function game(e) {
       if (round === 6) {
             stop();
       }
+}
+
+/* 
+      8/ Display infos:
+      =================
+*/
+function info() {
+      let info = document.querySelector(".infoContainer");
+      console.log(info);
+      info.classList.toggle("hide");
 }
 
 start();

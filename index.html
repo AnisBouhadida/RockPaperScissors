@@ -14,13 +14,33 @@
 </head>
 
 <body>
-      <a href="#" id="help-btn"><abbr title="Help"><i class="fas fa-question-circle fa-2x"></i></abbr></a>
+      <abbr title="Help"><i class="fas fa-question-circle fa-2x" id="help-btn"
+                  onclick="info()"></i></abbr>
       <a href="/fr/index.html" id="lang-btn"><abbr title="Français"> <i class="fas fa-language fa-3x"></i></abbr></a>
       <ul>
             <li class="btn" id="btn-1">Rock</li>
             <li class="btn" id="btn-2">Paper</li>
             <li class="btn" id="btn-3"> Scissors</li>
       </ul>
+      <div class="infoContainer hide">
+            <h1>Principle of the game <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors"
+                        target="_blank">[source]</a>
+            </h1>
+            <p>Rock-paper-scissors is a game performed with the hands and
+                  opposing one or more players.<br> In general, the stone beats
+                  the scissors (by blunting them), the scissors beat the leaf
+                  (by cutting it), the leaf beats the stone (by wrapping it).
+            </p>
+            <h1>How to play</h1>
+            <p> Here the player opposes the computer for 5 rounds, in the end
+                  if the player gets a score higher than that of the computer
+                  he wins, if the score is lower then he loses.<br>
+                  In order to play you have to make a choice by clicking on one
+                  of the three buttons.
+                  <br>
+                  At the end of the 5 rounds, if the player wants to redo a
+                  game just click on <span>Play again</span></p>
+      </div>
       <div class="displayGame">
             <p class="displayRound"></p>
             <div class="displaySelection"></div>
@@ -28,7 +48,7 @@
       </div>
       <div class="displayFinalResult"></div>
 
-      <script async src="script-min.js"></script>
+      <script async src="script.js"></script>
 </body>
 
 </html>

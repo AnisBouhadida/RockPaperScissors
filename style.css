@@ -8,9 +8,10 @@
       Summary:
       ========
       1/ Body & general style.
-      2/ Playing buttons style.
-      3/ Display style.
-      4/ Media queries & responsive design.
+      2/ Informations window style. 
+      3/ Playing buttons style.
+      4/ Display style.
+      5/ Media queries & responsive design.
       ========
 */
 
@@ -28,6 +29,16 @@ body {
       font-family: 'Roboto', sans-serif;
 }
 
+#lang-btn {
+      color: #1545b6;
+      margin: 10px;
+      float: left;
+}
+
+/* 
+  2/ Informations window style:
+  ============================= 
+*/
 #help-btn {
       color: #1545b6;
       margin: 10px;
@@ -35,14 +46,49 @@ body {
       float: left;
 }
 
-#lang-btn {
-      color: #1545b6;
-      margin: 10px;
-      float: right;
+.hide {
+      display: none;
+}
+
+.infoContainer {
+      width: 30%;
+      margin: 60px auto;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px #6d60c4,
+            -2px -2px 2px #6d60c4,
+            -1px -1px 2px #1545b6,
+            1px 1px 2px #1545b6,
+            3px 3px 2px #a080d3,
+            -3px -3px 2px #a080d3,
+            -4px -4px 2px #caa3e3,
+            4px 4px 2px #caa3e3;
+      background-color: rgba(240, 233, 233, 0.746);
+      text-align: center;
+}
+
+.infoContainer>h1 {
+      margin: 0;
+      text-decoration-style: double;
+}
+
+.infoContainer>h1>a {
+      text-decoration: none;
+      color: #6d60c4;
+      font-size: 0.5em;
+}
+
+.infoContainer>p {
+      text-align: left;
+      padding: 5px;
+}
+
+.infoContainer>p>span {
+      color: #6d60c4;
+      font-weight: bold;
 }
 
 /* 
-      2/ Playing buttons:
+      3/ Playing buttons:
       ===================
 */
 ul {
@@ -140,6 +186,12 @@ ul {
             padding: 40px;
       }
 
+      .infoContainer {
+            width: 90%;
+            margin: 40px auto;
+      }
+
+
       .displayGame {
             width: 90%;
             margin: 80px auto;
@@ -170,6 +222,11 @@ ul {
             padding: 20px;
       }
 
+      .infoContainer {
+            width: 90%;
+            margin: 40px auto;
+      }
+
       .displayGame {
             width: 90%;
             margin: 80px auto;
@@ -198,6 +255,11 @@ ul {
             min-width: 155px;
             margin: 0.2em auto;
             padding: 10px;
+      }
+
+      .infoContainer {
+            width: 90%;
+            margin: 20px auto;
       }
 
       .displayGame {
@@ -231,6 +293,11 @@ ul {
             padding: 20px;
       }
 
+      .infoContainer {
+            width: 90%;
+            margin: 20px auto;
+      }
+
       .displayGame {
             width: 90%;
             margin: 40px auto;
@@ -261,6 +328,11 @@ ul {
             padding: 10px;
       }
 
+      .infoContainer {
+            width: 90%;
+            margin: 10px auto;
+      }
+
       .displayGame {
             width: 90%;
             margin: 20px auto;
@@ -289,6 +361,11 @@ ul {
             min-width: 155px;
             margin: 0.2em auto;
             padding: 10px;
+      }
+
+      .infoContainer {
+            width: 90%;
+            margin: 10px auto;
       }
 
       .displayGame {

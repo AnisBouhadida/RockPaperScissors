@@ -14,13 +14,31 @@
 </head>
 
 <body>
-   <a href="#" id="help-btn"><abbr title="Aide"><i class="fas fa-question-circle fa-2x"></i></abbr></a>
-   <a href="../index.html" id="lang-btn"> <abbr title="English"> <i class="fas fa-language fa-3x"></i></abbr></a>
+   <abbr title="Aide"><i class="fas fa-question-circle fa-2x" id="help-btn"
+         onclick="info()"></i></abbr>
+   <a href=" ../index.html" id="lang-btn">
+      <abbr title="English"> <i class="fas fa-language fa-3x"></i></abbr></a>
    <ul>
       <li class="btn" id="btn-1">Pierre</li>
       <li class="btn" id="btn-2">Papier</li>
       <li class="btn" id="btn-3"> Ciseaux</li>
    </ul>
+   <div class="infoContainer hide">
+      <h1>Principe du jeu<a href="https://fr.wikipedia.org/wiki/Pierre-papier-ciseaux"
+            target="_blank">[source]</a>
+      </h1>
+      <p>Pierre-papier-ciseaux est un jeu effectué avec les mains et opposant
+         un ou plusieurs joueurs. <br> De façon générale, la pierre bat les
+         ciseaux (en les émoussant), les ciseaux battent la feuille (en la
+         coupant), la feuille bat la pierre (en l'enveloppant). </p>
+      <h1>Comment jouer</h1>
+      <p> Ici le joueur s'oppose à l'ordinateur pendant 5 rounds, à la fin si
+         le joueur obtiens un score supperieur à celui de l'ordinateur il
+         gagne, si le score est inferieur alors il perd. <br> Afin de jouer il
+         faut faire un choix en cliquant sur l'un des trois bouttons. <br> A la
+         fin des 5 rounds, si le joueur désir refaire une partie il suffit de
+         cliquer sur <span>Rejouer</span></p>
+   </div>
    <div class="displayGame">
       <p class="displayRound"></p>
       <div class="displaySelection"></div>
