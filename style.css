@@ -2,21 +2,22 @@
       Project : Rock, Paper, Scissors app.
       Developper : BOUHADIDA ANIS 
       File : style.css
-      Last update : 16/09/2018 
+      Last update : 18/09/2018 
 
 
       Summary:
       ========
-      1/ .
-      2/ .
-      3/ .
-      4/ .
-      5/ .
-      6/ .
-      7/ .
+      1/ Body & general style.
+      2/ Playing buttons style.
+      3/ Display style.
+      4/ Media queries & responsive design.
       ========
 */
 
+/* 
+      1/ Body & general style:
+      ========================
+*/
 body {
       background-image: url("bkgImage-min.jpg");
       background-attachment: fixed;
@@ -27,6 +28,10 @@ body {
       font-family: 'Roboto', sans-serif;
 }
 
+/* 
+      2/ Playing buttons:
+      ===================
+*/
 ul {
       list-style-type: none;
       width: 75%;
@@ -52,6 +57,21 @@ ul {
       background-image: linear-gradient(to bottom, #1545b6, #6d60c4, #a080d3, #caa3e3, #eecaf6);
 }
 
+#pa-btn {
+
+      position: fixed;
+      bottom: 30px;
+      left: 20px;
+}
+
+#pa-txt {
+      margin: 0;
+}
+
+/* 
+      3/ Display style:
+      =================
+*/
 .displayGame {
       width: 30%;
       margin: 80px auto;
@@ -67,17 +87,6 @@ ul {
       background-color: rgba(240, 233, 233, 0.746);
       text-align: center;
       line-height: 3em;
-}
-
-#pa-btn {
-
-      position: fixed;
-      bottom: 30px;
-      left: 20px;
-}
-
-#pa-txt {
-      margin: 0;
 }
 
 .displayFinalResult {
@@ -105,8 +114,10 @@ ul {
       padding: 1em;
 }
 
-
-
+/* 
+      4/ Media queries & responsive design:
+      =====================================
+*/
 @media screen and (min-width : 942px) and (max-width : 1024px) {
       .btn {
             display: list-item;
