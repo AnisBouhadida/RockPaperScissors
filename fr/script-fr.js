@@ -1,8 +1,8 @@
 /* 
-      Project : Rock, Paper, Scissors app.
-      Developper : BOUHADIDA ANIS 
-      File : script-fr.js
-      Last update : 18/09/2018 
+      Project : Rock, Paper, Scissors game.
+      Developper : AB_Dev 
+      File : script.js --- All the functions that runs the game with french syntaxe.
+      Last update : 12/10/2018 
 
 
       Summary:
